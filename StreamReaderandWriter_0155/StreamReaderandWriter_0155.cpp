@@ -20,10 +20,17 @@ int main() {
 	// undelimited loop untuk menulis
 	while (true) {
 		cout << "_ ";
+		// mendapatkan setiap karakter dalam satu baris
 		getline(cin, baris);
+		// loop akan berenti jika anda memasukan karakter q
 		if (baris == "q") break;
+		// menulis dan memasukannilai dari baris ke dalam fila
 		outfile << baris << endl;
 
 	}
+	// selesai dalam menulis sekarang tutup file nya
+	outfile.close();
+
+	
 
 }
