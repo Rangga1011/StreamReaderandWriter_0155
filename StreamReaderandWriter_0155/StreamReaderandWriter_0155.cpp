@@ -17,4 +17,13 @@ int main() {
 
 	cout << ">= menulis file, \'q\' untuk keluar " << endl;
 
+	// undelimited loop untuk menulis
+	while (true) {
+		cout << "_ ";
+		getline(cin, baris);
+		if (baris == "q") break;
+		outfile << baris << endl;
+
+	}
+
 }
